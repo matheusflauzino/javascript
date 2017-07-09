@@ -4,11 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Javascript Aula 03</title>
 	<style type="text/css">
-		body { background: #000; }
+		body { background: #fff; }
 		#lampada { display: block; margin: 20px auto; }
 	</style>
+
+	<script type="text/javascript">
+		function ligar()
+		{
+			document.getElementById('lampada').src = "img/lamp_on.jpg"
+		}
+	</script>
 </head>
-<body onload="alert('carregando')">
-	<img id="lampada" onclick="alert('Ola')" src="img/lamp_off.png">
+<body>
+	<img id="lampada" onclick="ligar()" src="img/lamp_off.jpg">
 </body>
 </html>
