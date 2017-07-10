@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Aula 03</title>
+	<style type="text/css">
+		body { background: #fff; }
+		#lampada { display: block; margin: 20px auto; }
+	</style>
+
+	<script type="text/javascript">
+		function ligar()
+		{
+			var primeiroNome = "Matheus"; //string
+			var idade = 28; //number
+			var casado = true; //boolean
+
+			alert(primeiroNome);
+
+			document.getElementById('lampada').src = "img/lamp_on.jpg"
+		}
+	</script>
+</head>
+<body>
+	<img id="lampada" onclick="ligar()" src="img/lamp_off.jpg">
+</body>
+</html>
